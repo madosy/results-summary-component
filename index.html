@@ -7,41 +7,46 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
 </head>
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="container">
+      <figure class="result">
+        <figcaption>Your Result</figcaption>
+        <div class="score-display">76</div>
+        <div class="score-label">Great</div>
+        <blockquote class="score-explanation">You scored higher than 65% of the people who have taken these tests.</blockquote>
+        </figure>
+      <figure class="result-summary">
+        <h1>Summary</h1>
+        <div class="criteria reaction">
+          <span class="material-symbols-outlined">bolt</span>
+          <h2>Reaction</h2>
+          <p class="score">20</p>
+        </div>
+        <div class="criteria memory">
+          <span class="material-symbols-outlined">neurology</span>
+          <h2>Memory</h2>
+          <p class="score">20</p>
+        </div>
+        <div class="criteria verbal">
+          <span class="material-symbols-outlined">sms</span>
+          <h2>Verbal</h2>
+          <p class="score">20</p>
+        </div>
+        <div class="criteria visual">
+          <span class="material-symbols-outlined">visibility</span>
+          <h2>Visual</h2>
+          <p class="score">20</p>
+        </div>
+        <button>Continue</button>
+      </figure>
   </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/madosy">madosy</a>.
+  </footer>
 </body>
 </html>
