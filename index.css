@@ -207,19 +207,19 @@ body {
     opacity: 1;
 }
 
-.criteria.reaction {
+.criteria:nth-of-type(1) {
     background-color: hsla(0, 100%, 67%, 7%);
     color: var(--Light-red);
 }
-.criteria.memory {
+.criteria:nth-of-type(2) {
     background-color: hsla(39, 100%, 56%, 7%);
     color: hsl(39, 100%, 56%);
 }
-.criteria.verbal {
+.criteria:nth-of-type(3) {
     background-color: hsla(166, 100%, 37%, 7%);
     color: hsl(166, 100%, 37%)
 }
-.criteria.visual {
+.criteria:nth-of-type(4) {
     background-color: hsla(234, 85%, 45%, 7%);
     color: hsl(234, 85%, 45%)
 }
@@ -267,8 +267,9 @@ body {
     transform: rotate(220deg) scaleY(0.8);
 }
 
-.material-symbols-outlined {
+.criteria img {
     user-select: none;
+    -webkit-user-drag: none;
 }
 
 
