@@ -30,11 +30,15 @@ body {
     left: 0;
     
     display: grid;
-    place-content: center;
+    grid-template-rows: 1fr min-content 1fr;
+    grid-template-columns: 1fr;
+    place-items:center;
+
 }
 
 
 .container {
+    grid-row:2;
     box-sizing: border-box;
     /* margin: auto; */
     padding: 0;
@@ -120,6 +124,7 @@ body {
     padding: 50px 40px;
 
     display:grid;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(6 1fr);
     gap: 15px;
 
@@ -267,15 +272,13 @@ body {
 }
 
 
-.attribution { font-size: 11px; margin-top: 20px; place-self: center;}
+.attribution { grid-row:3;font-size: 11px;; align-self: flex-end;}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
 @media screen and (max-width: 800px) {
     body {
-        justify-content: baseline;
-        align-content: baseline;
-        box-sizing: border-box;
+        place-content: none;
         
         /* display:block; */
         /* width: unset; */
@@ -285,6 +288,7 @@ body {
     .container,
     figure.result,
     figure.result-summary{
+        place-content: baseline;
         box-sizing: border-box;
         max-width: 100%;
         width: 100%;
