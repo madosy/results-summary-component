@@ -49,14 +49,14 @@ Users should be able to:
 - Using data file to update content
 - Using vw to control how content looks.
 - How to add a transition to a gradient button. Normally gradient backgrounds are not a transitional property. So, I had to create a pseudo element with opacity of 0 that becomes visible when the button becomes active:
-```css
-button::before {
-  transition: opacity 0.3s ease;
-  opacity: 0;
-}
-button:active::before {
-  opacity: 1;
-}
+  ```css
+  button::before {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  button:active::before {
+    opacity: 1;
+  }
 
 ## Author
 
