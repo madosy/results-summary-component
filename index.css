@@ -45,7 +45,7 @@ body {
     max-width: 750px;
     max-height: fit-content;
     border-radius: 30px;
-    box-shadow: 10px 10px 50px var(--Pale-blue);
+    box-shadow: 10px 30px 50px hsl(221, 100%, 94%);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
