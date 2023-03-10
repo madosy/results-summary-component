@@ -272,7 +272,6 @@ body {
     -webkit-user-drag: none;
 }
 
-
 .attribution { grid-row:3;font-size: 11px;; align-self: flex-end;}
 .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -280,12 +279,8 @@ body {
 @media screen and (max-width: 800px) {
     body {
         place-content: none;
-        
-        /* display:block; */
-        /* width: unset; */
-        /* max-width: -webkit-fill-available;
-        max-width: -moz-available; */
     }
+
     .container,
     figure.result,
     figure.result-summary{
@@ -346,14 +341,6 @@ body {
     padding-top: 4vw;
     padding-bottom: 4vw;
    }
-
-
-  
-
-
-
-
-
 
     .attribution {
         display:none;
