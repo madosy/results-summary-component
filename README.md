@@ -14,9 +14,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Continued development](#continued-development)
 - [Author](#author)
 
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -29,8 +26,6 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.png)
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
@@ -54,14 +49,14 @@ Users should be able to:
 - Using data file to update content
 - Using vw to control how content looks.
 - How to add a transition to a gradient button. Normally gradient backgrounds are not a transitional property. So, I had to create a pseudo element with opacity of 0 that becomes visible when the button becomes active:
-    ```css
-    button::before {
-      transition: opacity 0.3s ease;
-      opacity: 0;
-    }
-    button:active::before {
-      opacity: 1
-    }
+```css
+button::before {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+button:active::before {
+  opacity: 1;
+}
 
 ## Author
 
